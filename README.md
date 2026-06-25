@@ -40,10 +40,12 @@ character.
 
 The fields of this informal registry are:
 
-* Name:        Domain name used to identify the algorithm
+* Name:        Domain name used to identify the algorithm plus the hex equivalent
 * Description: Short description of algorithm
 * URL:         URL to description of the algorithm
 * Notes:       Notes on testing
+* Author:      Name and email of the submitter
 
-| Name | Description | URL | Notes |
-| ---- | ----------- | --- | ----- |
+| Domain name and hex equivalent | Description | URL | Notes | Author |
+| ------------------------------ | ----------- | --- | ----- | ------ |
+
