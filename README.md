@@ -31,7 +31,7 @@ Instead of following the recommendation in RFC 4034, for this unofficial
 testing we propose that each algorithm be identified with a single-letter
 domain name. For example, an algorithm that is identified as "{" would
 use algorithm number 253 and the first three bytes of the key or signature
-field would begin with 0x01m7b00. This makes all processing of algorithm
+field would begin with 0x017b00. This makes all processing of algorithm
 253 in this testing only need to check that the first byte is 0x01, the
 third byte is 0x00, and that the second byte is recognized. Other uses of
 algorithm 253 could proceed as they are now because, if they are following
