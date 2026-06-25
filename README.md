@@ -29,7 +29,7 @@ associated with an algorithm have sizes as close as possible to the final algori
 To maximize flexibility, the PRIVATEDNS names should be as short as possible.
 Instead of following the recommendation in RFC 4034, for this unofficial
 testing we propose that each algorithm be identified with a single-letter
-domain name. For example, an algorithm that is identified as "{" would
+domain name. For example, an algorithm that is identified as "{." would
 use algorithm number 253 and the first three bytes of the key or signature
 field would begin with 0x017b00. This makes all processing of algorithm
 253 in this testing only need to check that the first byte is 0x01, the
@@ -48,4 +48,4 @@ The fields of this informal registry are:
 
 | Domain name and hex equivalent | Description | URL | Notes | Author |
 | ------------------------------ | ----------- | --- | ----- | ------ |
-
+| "2." (0x013200) | Keys and signatures are 2048 bytes | <https://www.proper.com/dnssec-2048.txt> | Used to always go to TCP with no validation overhead | [Paul Hoffman](mailto:phoffman@proper.com) |
