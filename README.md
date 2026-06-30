@@ -49,3 +49,10 @@ The fields of this informal registry are:
 | Domain name and hex equivalent | Description | URL | Notes | Author |
 | ------------------------------ | ----------- | --- | ----- | ------ |
 | "2." (0x013200) | Keys and signatures are 2048 bytes | <https://www.proper.com/dnssec-2048.txt> | Used to always go to TCP with no validation overhead | [Paul Hoffman](mailto:phoffman@proper.com) |
+| "f." (0x016600) | Falcon-512 | <https://falcon-sign.info> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
+| "m." (0x016d00) | SLH-DSA-MTL SLHDSAMTLSHA2128S | <https://datatracker.ietf.org/doc/draft-fregly-dnsop-slh-dsa-mtl-dnssec/> | For MTL mode testing | [Ondřej Surý](mailto:ondrej@sury.org) |
+| "n." (0x016e00) | SLH-DSA-MTL SLHDSAMTLSHAKE128S | <https://datatracker.ietf.org/doc/draft-fregly-dnsop-slh-dsa-mtl-dnssec/> | For MTL mode testing | [Ondřej Surý](mailto:ondrej@sury.org) |
+| "q." (0x017100) | SQIsign with NIST-I parameter set | <https://sqisign.org> | Used to test whether the CPU slowdown is better or worse than going all TCP | [Ondřej Surý](mailto:ondrej@sury.org) |
+| "s." (0x017300) | SNOVA (24, 5, 16, 4) | <https://snova.pqclab.org/#page-parameters> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
+| "y." (0x017900) | MAYO\_one | <https://pqmayo.org/params-times/> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
+| "z." (0x018000) | MAYO\_two | <https://pqmayo.org/params-times/> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
