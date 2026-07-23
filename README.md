@@ -38,21 +38,27 @@ algorithm 253 could proceed as they are now because, if they are following
 the suggestion from RFC 4034, the names will all be longer than one
 character.
 
+To make sure the registry does not run out of allocatable identifiers, and
+to emphasize its testing nature, allocations expire after 1 year.
+Allocations can be extended by another year upon request within 3 months
+before expiration.
+
 The fields of this informal registry are:
 
 * Name:        Domain name used to identify the algorithm plus the hex equivalent
+* Expiration:  Expiration date
 * Description: Short description of algorithm
 * URL:         URL to description of the algorithm
 * Notes:       Notes on testing
 * Author:      Name and email of the submitter
 
-| Domain name and hex equivalent | Description | URL | Notes | Author |
-| ------------------------------ | ----------- | --- | ----- | ------ |
-| "2." (0x013200) | Keys and signatures are 2048 bytes | <https://www.proper.com/dnssec-2048.txt> | Used to always go to TCP with no validation overhead | [Paul Hoffman](mailto:phoffman@proper.com) |
-| "f." (0x016600) | Falcon-512 | <https://falcon-sign.info> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
-| "m." (0x016d00) | SLH-DSA-MTL SLHDSAMTLSHA2128S | <https://datatracker.ietf.org/doc/draft-fregly-dnsop-slh-dsa-mtl-dnssec/> | For MTL mode testing | [Ondřej Surý](mailto:ondrej@sury.org) |
-| "n." (0x016e00) | SLH-DSA-MTL SLHDSAMTLSHAKE128S | <https://datatracker.ietf.org/doc/draft-fregly-dnsop-slh-dsa-mtl-dnssec/> | For MTL mode testing | [Ondřej Surý](mailto:ondrej@sury.org) |
-| "q." (0x017100) | SQIsign with NIST-I parameter set | <https://sqisign.org> | Used to test whether the CPU slowdown is better or worse than going all TCP | [Ondřej Surý](mailto:ondrej@sury.org) |
-| "s." (0x017300) | SNOVA (24, 5, 16, 4) | <https://snova.pqclab.org/#page-parameters> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
-| "y." (0x017900) | MAYO\_one | <https://pqmayo.org/params-times/> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
-| "z." (0x018000) | MAYO\_two | <https://pqmayo.org/params-times/> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
+| Domain name and hex equivalent | Expiration | Description | URL | Notes | Author |
+| ------------------------------ | ---------- | ----------- | --- | ----- | ------ |
+| "2." (0x013200) | 2027-06-26 | Keys and signatures are 2048 bytes | <https://www.proper.com/dnssec-2048.txt> | Used to always go to TCP with no validation overhead | [Paul Hoffman](mailto:phoffman@proper.com) |
+| "f." (0x016600) | 2027-07-23 | Falcon-512 | <https://falcon-sign.info> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
+| "m." (0x016d00) | 2027-07-23 | SLH-DSA-MTL SLHDSAMTLSHA2128S | <https://datatracker.ietf.org/doc/draft-fregly-dnsop-slh-dsa-mtl-dnssec/> | For MTL mode testing | [Ondřej Surý](mailto:ondrej@sury.org) |
+| "n." (0x016e00) | 2027-07-23 | SLH-DSA-MTL SLHDSAMTLSHAKE128S | <https://datatracker.ietf.org/doc/draft-fregly-dnsop-slh-dsa-mtl-dnssec/> | For MTL mode testing | [Ondřej Surý](mailto:ondrej@sury.org) |
+| "q." (0x017100) | 2027-07-23 | SQIsign with NIST-I parameter set | <https://sqisign.org> | Used to test whether the CPU slowdown is better or worse than going all TCP | [Ondřej Surý](mailto:ondrej@sury.org) |
+| "s." (0x017300) | 2027-07-23 | SNOVA (24, 5, 16, 4) | <https://snova.pqclab.org/#page-parameters> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
+| "y." (0x017900) | 2027-07-23 | MAYO\_one | <https://pqmayo.org/params-times/> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
+| "z." (0x018000) | 2027-07-23 | MAYO\_two | <https://pqmayo.org/params-times/> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
