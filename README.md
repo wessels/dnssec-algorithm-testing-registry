@@ -48,6 +48,7 @@ The fields of this informal registry are:
 
 | Domain name and hex equivalent | Description | URL | Notes | Author |
 | ------------------------------ | ----------- | --- | ----- | ------ |
+| "1." (0x013100) | Keys and signatures are 1024 bytes | <https://www.proper.com/dnssec-2048.txt> | Like "2." but everything is 1024 bytes | [Peter van Dijk](mailto:peter.van.dijk@powerdns.com) |
 | "2." (0x013200) | Keys and signatures are 2048 bytes | <https://www.proper.com/dnssec-2048.txt> | Used to always go to TCP with no validation overhead | [Paul Hoffman](mailto:phoffman@proper.com) |
 | "f." (0x016600) | Falcon-512 | <https://falcon-sign.info> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
 | "m." (0x016d00) | SLH-DSA-MTL SLHDSAMTLSHA2128S | <https://datatracker.ietf.org/doc/draft-fregly-dnsop-slh-dsa-mtl-dnssec/> | For MTL mode testing | [Ondřej Surý](mailto:ondrej@sury.org) |
