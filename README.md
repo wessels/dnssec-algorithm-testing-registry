@@ -56,4 +56,4 @@ The fields of this informal registry are:
 | "q." (0x017100) | SQIsign with NIST-I parameter set | <https://sqisign.org> | Used to test whether the CPU slowdown is better or worse than going all TCP | [Ondřej Surý](mailto:ondrej@sury.org) |
 | "s." (0x017300) | SNOVA (24, 5, 16, 4) | <https://snova.pqclab.org/#page-parameters> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
 | "y." (0x017900) | MAYO\_one | <https://pqmayo.org/params-times/> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
-| "z." (0x018000) | MAYO\_two | <https://pqmayo.org/params-times/> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
+| "z." (0x017a00) | MAYO\_two | <https://pqmayo.org/params-times/> | For PQC algorithm testing | [Ondřej Surý](mailto:ondrej@sury.org) |
